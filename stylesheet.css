@@ -28,7 +28,7 @@ body
 
 img
 {
-    user-drag: none;
+    /*user-drag: none;*/
     -webkit-user-drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -75,16 +75,16 @@ h2
 #llama-pink
 {
     position: absolute;
-    left: 84.5vw;
-    top: 64vh;
+    left: 85vw;
+    top: 68vh;
 
-    height: 28%;
+    height: 23%;
 }
 
 #llamma-left
 {
     position: absolute;
-    top: 62.6vh;
+    top: 62.65vh;
     left: 2.8vw;
     height: 13%;
 }
@@ -92,13 +92,13 @@ h2
 #text-airdrop
 {
     position: absolute;
-    top: 43.55vh;
-    left: 7.75vw;
+    top: 43.75vh;
+    left: 7.55vw;
     /*
     top: 35vh;
     left: 9.5125vw;
     */
-    font-size: 2.25vh;
+    font-size: 2.15vh;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -165,20 +165,45 @@ h2
     height: 100%;
 }
 
-.page-header-icon-container h1
+#button-connect
 {
-    text-decoration: none;
-
-    background-image: url( "images/button-connect.png" );
-    background-size: 100% 100%;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-top: .7vh;
+    padding-left: 0.2vw;
+    padding-right: 0.5vw;
+    padding-top: .5vh;
     padding-bottom: .9vh;
     margin-left: 0.3vw;
+}
 
-    font-size: 1.65vh;
-    cursor: pointer;
+#button-connect a
+{
+    font-size: 25px;
+    color:white;
+    background-color:#ca7e7e;
+    display:block;
+    position:relative;
+    padding:7px 30px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #A45959;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #A45959;
+    box-shadow:inset 0 1px 0 #FFE5C4, 0 5px 0 #A45959;
+    
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+  
+#button-connect a:active
+{
+    top:5px;
+    background-color:#a45c5c;
+
+    -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
 }
 
 .page-main-container
@@ -245,25 +270,66 @@ h2
 
 .page-main-nft-container
 {
-    padding-top: 2vh;
+    padding-top: 3vh;
     display: flex;
 }
 
-.page-main-container > div + div + h1
+.application-form
 {
-    margin-top: 3.35vh;
-
-    background-image: url( "images/button-application.png" );
-    background-size: 100% 100%;
-
-    padding-top: 0.5rem;
-    padding-bottom: 2rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    position:relative;
+    display:inline-block;
+    margin:70px;
+}
+  
+.application-form a
+{
+    font-family: fredoka-one;
+    color:white;
+    font-size:60px;
+    text-align: center;
+    text-decoration:none;
+    background-color:#3E8682;
+    display:block;
+    position:relative;
+    padding:5px 40px;
+    
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+    
+    -webkit-box-shadow:inset 0 3px 0 #6DD094, 0 10px 0 #6DD094;
+    -moz-box-shadow:inset 0 3px 0 #6DD094, 0 10px 0 #6DD094;
+    box-shadow:inset 0 3px 0 #6DD094, 0 10px 0 #6DD094;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+  
+.application-form a:active
+{
+    top:10px;
+    background-color:#2C546C;
+    
+    -webkit-box-shadow:inset 0 3px 0 #6DD094, inset 0 -3px 0 #6DD094;
+    -moz-box-shadow:inset 0 3px 0 #6DD094, inset 0 -3pxpx 0 #6DD094;
+    box-shadow:inset 0 3px 0 #6DD094, inset 0 -3px 0 #6DD094;
+}
+  
+.application-form:after
+{
+    content:"";
+    height:100%;
+    width:100%;
+    padding:10px;
+    position: absolute;
+    bottom:-20px;
+    left:-10px;
+    z-index:-1;
+    background-color:#2a2247;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .page-mint-main-container
